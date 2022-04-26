@@ -5,15 +5,15 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-      <h1>Weather App</h1>
       <Weather/>
-      <footer>
+      </div>
+      <footer className='m-4'>
       <p>
      <a href="https://reliable-jalebi-7602ca.netlify.app/" target="_blank" rel='noreferrer'>open-source code</a> {" "}
      by Eunice Kimani
      </p>
      </footer>
-    </div>
+    
     </div>
   );
 }

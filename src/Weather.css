@@ -1,0 +1,18 @@
+body{
+    background: url(/images/peyman-farmani-UclyYWTFK7w-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Weather{
+    border: 1px solid black;
+    margin-top: 40px;
+    background-color: black;
+    opacity: 0.8;
+    color: whitesmoke;
+    width:50%;
+}
+
+ .Weather form{
+    margin: 20px;
+    justify-content:end;
+}
