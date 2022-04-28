@@ -1,6 +1,7 @@
 import React,{useState} from "react"
 import "./Weather.css"
 import axios from "axios"
+import Date from "./Date"
 
 export default function Weather(){
     const [load, setLoad]=useState(false)
@@ -12,6 +13,7 @@ export default function Weather(){
           temp: response.data.main.temp,
           humidity:response.data.main.humidity,
           wind:response.data.wind.speed,
+          date:new Date(response.data.dt*1000),
           description: response.data.weather[0].main,
           name:response.data.name
       })
@@ -38,7 +40,7 @@ export default function Weather(){
                 </div>
                 <h1 className="m-3">{weather.name}</h1>
                 <ul className="list-unstyled m-3">
-                    <li>Wednesday 10:02</li>
+                    <li><Date date={weather.date}/></li>
                     <li>{weather.description}</li>
                 </ul>
                 <div className="row">
