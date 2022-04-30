@@ -1,14 +1,14 @@
 import React,{useState} from "react"
 import "./Weather.css"
 import axios from "axios"
-import Date from "./Date"
+import FormatDate from "./FormatDate"
 
 export default function Weather(){
     const [load, setLoad]=useState(false)
     const [weather, setWeather]= useState({})
 
     function showResponse(response){
-        console.log(response.data)
+        
       setWeather({
           temp: response.data.main.temp,
           humidity:response.data.main.humidity,
@@ -40,7 +40,7 @@ export default function Weather(){
                 </div>
                 <h1 className="m-3">{weather.name}</h1>
                 <ul className="list-unstyled m-3">
-                    <li><Date date={weather.date}/></li>
+                    <li><FormatDate date={weather.date}/></li>
                     <li>{weather.description}</li>
                 </ul>
                 <div className="row">
@@ -56,7 +56,6 @@ export default function Weather(){
                  <div className="col-6">
                      <ul className="list-unstyled">
                          <li>Humidity: {weather.humidity} %</li>
-                         {/* <li>{weather.precipitation}%</li> */}
                          <li>Wind: {Math.round(weather.wind)} {" "}km/hr</li>
                      </ul>
                  </div>
