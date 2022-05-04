@@ -9,8 +9,9 @@ function App() {
       </div>
       <footer className='m-4'>
       <p>
-     <a href="https://reliable-jalebi-7602ca.netlify.app/" target="_blank" rel='noreferrer'>open-source code</a> {" "}
-     by Eunice Kimani
+        This Project
+     <a href="https://reliable-jalebi-7602ca.netlify.app/" target="_blank" rel='noreferrer'>{""}open-source code</a> {" "}
+    coded by Eunice Kimani
      </p>
      </footer>
     
