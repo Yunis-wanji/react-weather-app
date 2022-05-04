@@ -11,7 +11,7 @@ export default function Weather(props){
     const [weather, setWeather]= useState({})
 
     function showResponse(response){
-        
+        console.log(response)
       setWeather({
           temp: response.data.main.temp,
           humidity:response.data.main.humidity,
@@ -34,6 +34,7 @@ export default function Weather(props){
     function handleSubmit(event){
       event.preventDefault();
       search()
+      
       
     }
 
