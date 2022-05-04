@@ -1,6 +1,10 @@
 .container{
-     margin-left: 40px
+     margin-left: 40px;
+     padding-right: 20px
 }
 p{
     text-align: center;
+}
+.Forecast{
+    padding-left: 110px;
 }
