@@ -1,8 +1,14 @@
 import React from "react"
+import ReactAnimatedWeather from 'react-animated-weather';
 
 
-export default function WeatherIcon(){
+export default function WeatherIcon(props){
     return(
-        <h1> Icon</h1>
-    )
+       < ReactAnimatedWeather
+        icon= "CLEAR_DAY"
+       color ='goldenrod'
+       sizE = {512}
+     animate = {true}
+     />
+    );
 }
