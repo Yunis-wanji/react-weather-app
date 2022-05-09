@@ -12,7 +12,7 @@ export default function Weather(props){
     const [weather, setWeather]= useState({})
 
     function showResponse(response){
-        console.log(response)
+        
       setWeather({
           coords: response.data.coord,
           temp: response.data.main.temp,
