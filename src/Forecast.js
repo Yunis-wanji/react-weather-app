@@ -25,22 +25,23 @@ setLoaded(true)
 
 
 
-if (loaded){
- 
-   
+if (loaded){ 
     return (
         <div className="Forecast">
             <div className="row">
                 {forecast.map(function (dailyForecast, index){
-                    if(index<6){
+                    
+                    if(index < 6){
                         return(
                             <div className="col-2" key={index}>
                     <ForecastDay data={dailyForecast}/>
                </div>
-                        )
+                        );
+                    }else{
+                        return null
                     }
-                }
-                )}
+                    
+                })}
                 
         </div>
         </div>
