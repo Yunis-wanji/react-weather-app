@@ -10,7 +10,7 @@ function App() {
       <footer className='m-4'>
       <p>
         This Project
-     <a href="https://reliable-jalebi-7602ca.netlify.app/" target="_blank" rel='noreferrer'>{" "} open-source code</a> {" "} on Github
+     <a href="https://github.com/Yunis-wanji/react-weather-app" target="_blank" rel='noreferrer'>{" "} open-source code</a> {" "} on Github
     coded by Eunice Kimani and hosted on Netlify
      </p>
      </footer>
